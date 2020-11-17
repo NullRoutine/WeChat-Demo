@@ -1,0 +1,20 @@
+<!--pages/testanim/testanim.wxml-->
+<view>
+  <view class="view_add_item_two_type" bindtap="deleteLots" animation="{{animDelLots}}">
+    <image class="img_add_two_type" mode="aspectFit" src="/image/icon_wuzi_search.png" />
+  </view>
+  <view class="view_add_item_type" bindtap="add" animation="{{animAdd}}">
+    <image class="img_add_two_type" mode="aspectFit" src="/image/icon_xinzeng.png" />
+  </view>
+  <view class="view_add_type" bindtap="showOrHide" animation="{{animMain}}">
+    <image class="img_add" mode="aspectFit" src="/image/icon_add_common.png" />
+  </view>
+</view>
+
+<view class="mask" wx:if="{{isShowModal}}">
+  <view class="modalDlg" wx:if="{{isShowModal}}">
+    <view>
+      我是自定义弹出框不带动画的
+    </view>
+  </view>
+</view>

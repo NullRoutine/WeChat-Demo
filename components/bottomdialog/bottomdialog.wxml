@@ -1,0 +1,8 @@
+<!--components/bottomdialog/bottomdialog.wxml-->
+<view class="am-popup {{isShow ? 'am-popup-show':''}} {{ animation ? 'animation': '' }}" catchtouchmove='touchMove'>
+  <view class="am-popup-mask" catchtap="close">
+  </view>
+  <view class="am-popup-content modal-container" style="height:{{dialogHeight}}vh">
+    <slot></slot>
+  </view>
+</view>

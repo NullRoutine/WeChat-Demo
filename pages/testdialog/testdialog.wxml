@@ -1,0 +1,9 @@
+<!--pages/testdialog/testdialog.wxml-->
+<view bindtap="showDialog" style="padding:20rpx;">
+  点击
+</view>
+<bottomdialog isShow="{{isShow}}" dialogHeight="30">
+  <view>
+    这里可以填充自己的内容,其他属性也可以自己定制，免去了很多麻烦,将业务分离出来
+  </view>
+</bottomdialog>

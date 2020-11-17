@@ -1,0 +1,53 @@
+/* components/bottomdialog/bottomdialog.wxss */
+.am-popup {
+  /* position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  /* z-index: -1; */
+}
+
+.am-popup-show .am-popup-content {
+  transform: none;
+}
+
+.am-popup-show .am-popup-mask {
+  visibility: visible;
+  opacity: 1;
+}
+
+.am-popup.animation .am-popup-content {
+  transition: all 0.2s linear;
+}
+
+.am-popup.animation .am-popup-mask {
+  transition: all 0.2s linear;
+}
+
+.am-popup-mask {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 1000;
+}
+
+.am-popup-content {
+  position: fixed;
+}
+
+.modal-container {
+  background-color: #fff;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 60vh;
+  transform: translateY(100%);
+}
